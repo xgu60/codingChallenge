@@ -63,12 +63,12 @@ def findCellWithMaxCarrots(garden, cells):
 	#if no qualified cell found, set as -1
 	maxCell = -1
 	for cell in cells:
-			#use to handle edge case, assume out side of boundaries carrots nums as 0
-			if cell[0] < 0 or cell[0] >= len(garden) or cell[1] < 0 or cell[1] >= len(garden[0]):
-				continue
-			if (garden[cell[0]][cell[1]] > maxCarrots):
-				maxCarrots = garden[cell[0]][cell[1]]
-				maxCell = cell	
+		#use to handle edge case, assume out side of boundaries carrots nums as 0
+		if cell[0] < 0 or cell[0] >= len(garden) or cell[1] < 0 or cell[1] >= len(garden[0]):
+			continue
+		if (garden[cell[0]][cell[1]] > maxCarrots):
+			maxCarrots = garden[cell[0]][cell[1]]
+			maxCell = cell	
 	return maxCell
 				
 				
